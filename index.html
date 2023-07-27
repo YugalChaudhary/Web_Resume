@@ -10,12 +10,42 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Javascript -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="./assets/javascripts/main.js"></script>
 </head>
 <body>
     <div id="container">
+        <nav id="main-nav">
+            <ul>
+                <li>
+                    <a href="#home">
+                        Home <i class="fa-solid fa-house"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#about">
+                        About <i class="fa-solid fa-user"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#skills">
+                        Skills <i class="fa-solid fa-laptop-code"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#projects">
+                        Projects <i class="fa-solid fa-toolbox"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        Contact <i class="fa-solid fa-address-book"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
         <div class="wrapper">
-            <div class="row">
+            <div class="row g-0">
                 <div class="col-md-3">
                     <div class="intro">
                         <div class="inner-wrapper">
@@ -46,23 +76,325 @@
                     </div>
                 </div>
                 <div class="col-md-9">
-                    <div class="content">
+                    <div class="content h-100">
                         <!-- home -->
-                        <section id="home">
-                            
+                        <section id="home" class="h-100">
+                            <div class="inner-wrapper">
+                                <h1>Yugal Chaudhary</h1>
+                                <p>MERN Stack Developer</p>
+                            </div>
                         </section>
                         
                         <!-- about -->
-                        <section id="about"></section>
+                        <section id="about">
+                            <h2>About Me</h2>
+                            <div class="row mb-4">
+                                <div class="col-md-7">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium provident fugit a, nam eveniet quos et soluta vel, deleniti doloribus velit consequatur ut fugiat, magnam sunt! Nemo harum ratione blanditiis.
+                                    </p>
+                                </div>
+                                <div class="col-md-5">
+                                    <ul>
+                                        <li><span>DOB : </span>12/02/2001</li>
+                                        <li><span>Gender : </span>Male</li>
+                                        <li><span>Email : </span>yugalchaudhary1@gmail.com</li>
+                                        <li><span>Phone : </span>+91 9599459613</li>
+                                        <li><span>Country : </span>India</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h2>What I Do.</h2>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-code"></i>
+                                    </div>
+                                    <h4>Developer</h4>
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, velit tempora. Tempora, eius, consequatur id ex suscipit perferendis nobis porro ipsum debitis fugiat magnam est, illum quidem vel a quod?
+                                    </p>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-pen-nib"></i>
+                                    </div>
+                                    <h4>Designing</h4>
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, velit tempora. Tempora, eius, consequatur id ex suscipit perferendis nobis porro ipsum debitis fugiat magnam est, illum quidem vel a quod?
+                                    </p>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-list-check"></i>
+                                    </div>
+                                    <h4>Management</h4>
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, velit tempora. Tempora, eius, consequatur id ex suscipit perferendis nobis porro ipsum debitis fugiat magnam est, illum quidem vel a quod?
+                                    </p>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-code"></i>
+                                    </div>
+                                    <h4>Developer</h4>
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, velit tempora. Tempora, eius, consequatur id ex suscipit perferendis nobis porro ipsum debitis fugiat magnam est, illum quidem vel a quod?
+                                    </p>
+                                </div>
+                            </div>                           
+
+                            
+                        </section>
                         
                         <!-- skills -->
-                        <section id="skills"></section>
+                        <section id="skills">
+                            <h2>Education & Skills</h2>
+
+                            <div class="row">
+                                <div class="education col-md-8">
+                                    <h4>Education</h4>
+                                    <div class="timeline">
+                                        <div class="box left">
+                                            <div class="inner-box">
+                                                <h5>2017</h5>
+                                                <p>
+                                                    10<sup>th</sup> Standard <br>
+                                                    <span>St Paul's Academy</span>
+                                                </p>
+                                            </div>
+                                        </div>
+    
+                                        <div class="box right">
+                                            <div class="inner-box">
+                                                <h5>2019</h5>
+                                                <p>
+                                                    12<sup>th</sup> Standard <br>
+                                                    <span>St Paul's Academy</span>
+                                                </p>
+                                            </div>
+                                        </div>
+    
+                                        <div class="box left">
+                                            <div class="inner-box">
+                                                <h5>2020-24</h5>
+                                                <p>
+                                                    Graduation <br>
+                                                    <span>Rak Kumar Goel Institute Of Technology</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="skillset col-md-4">
+                                    <h4>Front End</h4>
+                                    <ul>
+                                        <li>
+                                            <p>HTML 5</p>
+                                            <div class="bar">
+                                                <span class="p-80"></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p>CSS 3</p>
+                                            <div class="bar">
+                                                <span class="p-75"></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p>Javascript</p>
+                                            <div class="bar">
+                                                <span class="p-75"></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p>Bootstrap</p>
+                                            <div class="bar">
+                                                <span class="p-85"></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p>React</p>
+                                            <div class="bar">
+                                                <span class="p-60"></span>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <hr>
+
+                                    <h4>Back End</h4>
+                                    <ul>
+                                        <li>
+                                            <p>Node JS</p>
+                                            <div class="bar">
+                                                <span class="p-65"></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p>Express</p>
+                                            <div class="bar">
+                                                <span class="p-70"></span>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <hr>
+
+                                    <h4>Database</h4>
+                                    <ul>
+                                        <li>
+                                            <p>MongoDB</p>
+                                            <div class="bar">
+                                                <span class="p-75"></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p>MySQL</p>
+                                            <div class="bar">
+                                                <span class="p-60"></span>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <hr>
+
+                                    <h4>Tools & IDE</h4>
+                                    <ul>
+                                        <li>
+                                            <p>VS Code</p>
+                                            <div class="bar">
+                                                <span class="p-80"></span>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </section>
                         
                         <!-- projects -->
-                        <section id="projects"></section>
+                        <section id="projects">
+                            <h2>Projects</h2>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <img src="./assets/images/notesJS.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Notes Taking Application JS</h5>
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                          <a href="https://github.com/YugalChaudhary/Notes_Taking_Application_JS" class="btn btn-primary">Git Hub Link</a>
+                                          <a href="https://yugalchaudhary.github.io/Notes_Taking_Application_JS/" class="btn btn-warning">Live Link</a>
+                                        </div>
+                                      </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <img src="./assets/images/notesReact.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Notes Taking Application React</h5>
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                          <a href="https://github.com/YugalChaudhary/Notes_Taking_Application" class="btn btn-primary">Git Hub Link</a>
+                                        </div>
+                                      </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <img src="./assets/images/weather.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Weather Forecaster</h5>
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                          <a href="https://github.com/YugalChaudhary/Weather_Forecaster" class="btn btn-primary">Git Hub Link</a>
+                                          <a href="https://yugalchaudhary.github.io/Weather_Forecaster/" class="btn btn-warning">Live Link</a>
+                                        </div>
+                                      </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <img src="./assets/images/wordle.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Wordle Game</h5>
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                          <a href="" class="btn btn-primary">Git Hub Link</a>
+                                          <a href="https://yugalchaudhary.github.io/Wordle_Game/" class="btn btn-warning">Live Link</a>
+                                        </div>
+                                      </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <img src="./assets/images/medium-project.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Medium Clone</h5>
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                          <a href="https://github.com/YugalChaudhary/medium-clone" class="btn btn-primary">Git Hub Link</a>
+                                        </div>
+                                      </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <img src="./assets/images/tnyt.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h5 class="card-title">The New York Times Clone</h5>
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                          <a href="https://github.com/YugalChaudhary/The_New_York_Times_Clone" class="btn btn-primary">Git Hub Link</a>
+                                        </div>
+                                      </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <img src="./assets/images/spotify.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Spotify Frontend Clone</h5>
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                          <a href="https://github.com/YugalChaudhary/Spotify-frontend-clone" class="btn btn-primary">Git Hub Link</a>
+                                        </div>
+                                      </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <img src="./assets/images/netflix.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Netflix Frontend Clone</h5>
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                        </section>
                         
                         <!-- contact -->
-                        <section id="contact"></section>
+                        <section id="contact">
+                            <h2>Contact</h2>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="exampleInputName1" class="form-label">Enter Name</label>
+                                    <input type="text" placeholder="Enter name...." class="form-control" id="exampleInputName1" aria-describedby="nameHelp">
+                                  </div>
+                                <div class="mb-3">
+                                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                  <input type="email" placeholder="Enter Email...." class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Enter Message</label>
+                                    <textarea class="form-control" placeholder="Enter Message...." id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Contact Me</button>
+                              </form>
+                        </section>
                     </div>
                 </div>
             </div>
